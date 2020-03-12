@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 
+import ListaContato from './ListaContato';
 function App() {
   return (
-    <div className="App">
-     <h1>Hello Word</h1>
-    </div>
+   <ListaContato/>
   );
 }
 
