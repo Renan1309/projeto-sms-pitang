@@ -4,7 +4,23 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter , Switch , Route } from 'react-router-dom';
+import Listconversas from './component/conversas/ListConversas';
+import CadastroUsuario from './component/CadastroUsuario';
+
+ReactDOM.render(
+    <BrowserRouter>
+        <Switch>
+            <Route path='/' exact={true} component={App}/>
+            <Route path='/login' exact={true} component={App}/>
+            <Route path='/cadastro' exact={true} component={CadastroUsuario}/>
+            <Route path='/conversas' exact={true} component={Listconversas}/>
+
+        </Switch>
+    </BrowserRouter>
+    //ReactDOM.render(<App />, document.getElementById('root'));
+
+ , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

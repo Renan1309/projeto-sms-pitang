@@ -5,15 +5,7 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-image:
 
-    linear-gradient(#FA8072 0, #FA8072 100%),
-    linear-gradient(#FA8072 0, #FA8072 100%);
-background-size: 100% 50%;
-background-position:bottom right, bottom left;
-background-repeat: no-repeat;
-}
 
 
 
@@ -37,7 +29,7 @@ background-repeat: no-repeat;
     border-right-width: 0;
     border-left-width: 0;
     border-bottom: 0;
-    border-top-width:20px;
+    border-top-width:10px;
     border-top-color:red;
     background-color: #fff;
     margin-top: 50px;
@@ -57,13 +49,15 @@ background-repeat: no-repeat;
     flex-direction: column;
 }
 
+/*
 .combo form label {
     font-size: 15px;
     color: rgb(185, 185, 185);
     font-weight: bold;
     margin-bottom: 8px;
 }
-
+*/
+/*
 .combo form input[type=email], .combo form input[type=password]{
     margin-bottom: 20px;
     border: 1px solid #ddd;
@@ -72,6 +66,7 @@ background-repeat: no-repeat;
     padding: 0 15px;
     font-size: 16px;
 }
+*/
 
 .combo button.btnSI {
   border:  0; /* zerando a borda padrao que o btn vem */

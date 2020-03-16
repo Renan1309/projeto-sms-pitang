@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import ListaContato from './ListaContato';
-import LoginComponent from './component/loginComponent';
+
+
+import HomePage from './component/login/HomePage';
 function App() {
   return (
-    <LoginComponent/>
+   // <LoginComponent/>
+   <HomePage/>
   );
 }
 
