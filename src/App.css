@@ -1,8 +1,8 @@
 body {
     background-image:
 
-    linear-gradient(#FA8072 0, #FA8072 100%),
-    linear-gradient(#FA8072 0, #FA8072 100%);
+    linear-gradient(#f98b79 0, #f98b79 100%),
+    linear-gradient(#f98b79 0, #f98b79 100%);
 background-size: 100% 50%;
 background-position:bottom right, bottom left;
 background-repeat: no-repeat;

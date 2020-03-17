@@ -17,6 +17,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: #070707;
 }
 .divisao{
     margin: 10px auto 0;

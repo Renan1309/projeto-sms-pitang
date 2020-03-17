@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import '../conversas/ListaConversas.css'
-import userdefault from '../conversas/userdefault.png'
+import userdefault from '../conversas/perfiluser.png'
 import axios from 'axios';
 
 
@@ -25,17 +25,22 @@ class Listconversas extends Component  {
       return (
         <>
         <h1>Bem vindo ao chat</h1>
-           <div className = "conversa">
-             <tr>
-               <td>
-                  <img className="img" src={userdefault} alt="logouserdefault"></img>
-               </td>
-               <td>
-                  <h3>lista</h3>
-               <p>mensagem aqui </p>
-               </td>
-             </tr>
+      
+      <div className= "col-6">
+        <div className="row">
+           <div className="col-2">
+              <img className="img" src={userdefault} alt="logouserdefault"></img>
+            </div>
+            <div class="col">
+              <h5>contato</h5>
+              <p>Olá amigo !</p>
+            </div>
            </div>
+      </div>
+
+        
+
+          
         </>
        
       );
