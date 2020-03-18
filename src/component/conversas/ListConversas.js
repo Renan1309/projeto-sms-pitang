@@ -1,7 +1,8 @@
 import React , { Component } from 'react';
 import '../conversas/ListaConversas.css'
-import userdefault from '../conversas/perfiluser.png'
+import userdefault from '../conversas/userdefault.png'
 import axios from 'axios';
+import contactimage from '../../assets/contactprot.png'
 
 
 
@@ -21,24 +22,138 @@ class Listconversas extends Component  {
     })
   }
 
+  setClick = event =>{
+    console.log("Click na div");
+  }
     render(){
       return (
         <>
-        <h1>Bem vindo ao chat</h1>
+       
       
-      <div className= "col-6">
-        <div className="row">
-           <div className="col-2">
-              <img className="img" src={userdefault} alt="logouserdefault"></img>
-            </div>
-            <div class="col">
-              <h5>contato</h5>
-              <p>Olá amigo !</p>
-            </div>
-           </div>
-      </div>
-
+      <div className= "col-3 testex">
         
+            <div onClick ={this.setClick} className="row">
+               <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                </div>
+                <div className="col">
+                  <h5>Renan</h5>
+                  <p>Olá amigo !</p>
+                </div>
+              </div>
+    
+               <div className="row">
+                 <div className="col-2">
+                 <img className="img" src={contactimage} alt="logouserdefault"></img>
+                  </div>
+                  <div className="col">
+                    <h5>Robson</h5>
+                    <p>Fala cara !</p>
+                  </div>
+               </div>
+    
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+               <div className="row">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+         
+      
+               
+          </div>
+
+       
 
           
         </>

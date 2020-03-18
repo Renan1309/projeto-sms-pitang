@@ -5,8 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter , Switch , Route } from 'react-router-dom';
-import Listconversas from './component/conversas/ListConversas';
 import CadastroUsuario from './component/CadastroUsuario';
+import HomeSms from './component/conversas/HomeSms';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -14,7 +14,7 @@ ReactDOM.render(
             <Route path='/' exact={true} component={App}/>
             <Route path='/login' exact={true} component={App}/>
             <Route path='/cadastro' exact={true} component={CadastroUsuario}/>
-            <Route path='/conversas' exact={true} component={Listconversas}/>
+            <Route path='/conversas' exact={true} component={HomeSms}/>
 
         </Switch>
     </BrowserRouter>
