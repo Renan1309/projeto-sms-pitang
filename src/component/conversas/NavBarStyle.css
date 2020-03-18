@@ -1,5 +1,16 @@
 
 
+.chatprincipal {
+    margin: 80px auto 0;
+    max-width: 90%;
+    width: auto;
+    margin-bottom: 30px ;
+ 
+    background-color: turquoise;
+}
+
+
+
 .navbarcenter{
   display: flex;
   background-color: yellowgreen;
@@ -13,6 +24,10 @@
 .iconawesome menu{
     color: #eee;
     font-size: 22px;
+}
+
+.col-5.btn-search{
+    background-color: #d2d2d2;
 }
 
 .iconstory {

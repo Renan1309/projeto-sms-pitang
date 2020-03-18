@@ -23,6 +23,7 @@ class Listconversas extends Component  {
   }
 
   setClick = event =>{
+    alert("click na lista")
     console.log("Click na div");
   }
     render(){
@@ -121,33 +122,9 @@ class Listconversas extends Component  {
                      <p>Como esta o projeto ?</p>
                    </div>
                </div>
-               <div className="row">
-                  <div className="col-2">
-                  <img className="img" src={contactimage} alt="logouserdefault"></img>
-                   </div>
-                   <div className="col">
-                     <h5>Messi</h5>
-                     <p>Como esta o projeto ?</p>
-                   </div>
-               </div>
-               <div className="row">
-                  <div className="col-2">
-                  <img className="img" src={contactimage} alt="logouserdefault"></img>
-                   </div>
-                   <div className="col">
-                     <h5>Messi</h5>
-                     <p>Como esta o projeto ?</p>
-                   </div>
-               </div>
-               <div className="row">
-                  <div className="col-2">
-                  <img className="img" src={contactimage} alt="logouserdefault"></img>
-                   </div>
-                   <div className="col">
-                     <h5>Messi</h5>
-                     <p>Como esta o projeto ?</p>
-                   </div>
-               </div>
+               
+              
+              
          
       
                

@@ -1,0 +1,13 @@
+.col-3.search{
+    background-color: #e5e5e5;
+}
+
+.btn-search{
+    border-radius: 15px;
+    border-style: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #d2d2d2;
+    
+}

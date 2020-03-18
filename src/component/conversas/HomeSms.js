@@ -4,6 +4,7 @@ import Listconversas from './ListConversas';
 import NavBar from './NavBar';
 import NavBarMesage from './NavBarMensage';
 import './NavBarStyle.css'
+import  SearchComponent from './SearchComponent'
 
 
 
@@ -14,17 +15,17 @@ class HomeSms extends Component  {
     render(){
       return (
         <>
-        <div className="navbarcenter">
-        <NavBar/>
-        <NavBarMesage/>
+        <div className="chatprincipal">
+           <div className="navbarcenter">
+               <NavBar/>
+               <NavBarMesage/>
+           </div>
+           <div> 
+              <SearchComponent/>
+              <Listconversas/>
+           </div>
         </div>
-        
-        <div>
-        
        
-        <Listconversas/>
-        </div>
-         
         </>
        
       );
