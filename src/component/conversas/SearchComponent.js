@@ -11,7 +11,7 @@ class SearchComponent extends Component  {
   
     render(){
       return (
-            <div className="px-1">
+            <div className="searchcolor">
               <input className=" btn-search" type="email" id="email" placeholder=" Search a message "></input>
            </div>
       );

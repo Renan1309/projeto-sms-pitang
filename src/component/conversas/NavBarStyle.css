@@ -45,7 +45,7 @@
 }
 
 .navbar.nav-bar-menu {
-    width: 25%;
+  
     background-color: #9e9e9e;
     border-style: groove;
     border-right-width: px;
@@ -56,8 +56,8 @@
 
 .navbar.nav-bar-menu  img{
     border-radius: 70%;
-    max-width:50px;
-    max-height:50px;
+    max-width:30px;
+   
 }
 
 .navbar.nav-bar-mesage{

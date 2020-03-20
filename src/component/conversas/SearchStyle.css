@@ -1,5 +1,7 @@
-.col-3.search{
+.searchcolor{
     background-color: #e5e5e5;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .btn-search{
