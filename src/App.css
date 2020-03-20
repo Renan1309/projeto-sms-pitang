@@ -7,3 +7,16 @@ background-size: 100% 50%;
 background-position:bottom right, bottom left;
 background-repeat: no-repeat;
 }
+
+.app{
+
+        color: #8A8A8A;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: repeat-x;
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}

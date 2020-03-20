@@ -1,10 +1,12 @@
 import React , { Component } from 'react';
-import '../conversas/ListaConversas.css'
 import Listconversas from './ListConversas';
 import NavBar from './NavBar';
 import NavBarMesage from './NavBarMensage';
 import './NavBarStyle.css'
 import  SearchComponent from './SearchComponent'
+import './Chat.css'
+import SendMessage from './SendMessage';
+
 
 
 
@@ -15,17 +17,28 @@ class HomeSms extends Component  {
     render(){
       return (
         <>
-        <div className="chatprincipal">
-           <div className="navbarcenter">
-               <NavBar/>
-               <NavBarMesage/>
-           </div>
-           <div> 
-              <SearchComponent/>
-              <Listconversas/>
-           </div>
-        </div>
        
+        <div className="chatbody">
+        <section>
+              <div className="w-100 mx-0 row ">
+                 <NavBar/>
+                 <NavBarMesage/>
+              </div>
+               <div className="w-100 mx-0 row ">
+                 <div className ="col-4  px-0">
+                       <SearchComponent/>
+                        <Listconversas/>
+                  </div >
+                  <div className="col px-0">
+                  <SendMessage/>
+                  </div>
+                  
+               </div>
+                 
+              
+           </section>
+        </div>
+        
         </>
        
       );

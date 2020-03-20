@@ -12,12 +12,13 @@ class NavBarMesage extends Component  {
         <>
     {/*<div className= "col-3 navbarmesage">*/}
      
-          <nav className="navbar nav-bar-mesage ">
+          <div className="navbar nav-bar-mesage col">
         
-               
+                   <h2>Renan</h2>
+                   <div className="col px-0"></div>
                    <FontAwesomeIcon icon={faEllipsisV} />
                
-         </nav>
+         </div>
       
      {/*</div>*/}
         </>

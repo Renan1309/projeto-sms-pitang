@@ -3,11 +3,13 @@
 }
 
 .btn-search{
-    border-radius: 15px;
+    border-radius: 25px;
     border-style: hidden;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
     background-color: #d2d2d2;
+    height: 35px;
+    padding: 0 15px;
     
 }

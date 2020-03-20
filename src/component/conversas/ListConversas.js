@@ -1,6 +1,6 @@
 import React , { Component } from 'react';
 import '../conversas/ListaConversas.css'
-import userdefault from '../conversas/userdefault.png'
+
 import axios from 'axios';
 import contactimage from '../../assets/contactprot.png'
 
@@ -31,9 +31,9 @@ class Listconversas extends Component  {
         <>
        
       
-      <div className= "col-3 testex">
+      <div className= "listchat px-1">
         
-            <div onClick ={this.setClick} className="row">
+            <div onClick ={this.setClick} className="row listmessage">
                <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                 </div>
@@ -43,7 +43,7 @@ class Listconversas extends Component  {
                 </div>
               </div>
     
-               <div className="row">
+               <div className="row listmessage">
                  <div className="col-2">
                  <img className="img" src={contactimage} alt="logouserdefault"></img>
                   </div>
@@ -53,7 +53,7 @@ class Listconversas extends Component  {
                   </div>
                </div>
     
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -63,7 +63,7 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -73,7 +73,7 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -83,7 +83,7 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -93,7 +93,7 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -103,7 +103,17 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
+                  <div className="col-2">
+                  <img className="img" src={contactimage} alt="logouserdefault"></img>
+                   </div>
+                   <div className="col">
+                     <h5>Messi</h5>
+                     <p>Como esta o projeto ?</p>
+                   </div>
+               </div>
+ 
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -113,7 +123,7 @@ class Listconversas extends Component  {
                    </div>
                </div>
 
-               <div className="row">
+               <div className="row listmessage">
                   <div className="col-2">
                   <img className="img" src={contactimage} alt="logouserdefault"></img>
                    </div>
@@ -122,6 +132,15 @@ class Listconversas extends Component  {
                      <p>Como esta o projeto ?</p>
                    </div>
                </div>
+
+               
+ 
+
+         
+ 
+
+
+
                
               
               
