@@ -6,27 +6,22 @@
 
 }
 
-.imgchat{
-    width: 3.5em;
-    height: 3.5em;
-   background-color: tomato;
-
-}
-
 .imgchat {
     width: 3.5em;
     height: 3.5em;
    background-color: tomato;
 
 }
-
 .conversation{
     padding: 0.4em 0.2em;
-    background-color:#e3e3e3;
+    background-color:#fff;
     display: flex;
     border-top: 1px solid;
     border-color: ffffff;
-
+}
+.listchat :hover{
+   background-color: #e5e5e5;
+   
 }
 
 .conversation:first-child{
@@ -40,8 +35,7 @@ b.namecontact{
 
 .iconprops{
     text-align: center;
+    display: block;
 }
 
-.iconeditmsg {
-    text-align: center;
-}
+

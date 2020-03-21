@@ -13,6 +13,16 @@ import SendMessage from './SendMessage';
 
 class HomeSms extends Component  {
 
+  constructor() {
+    super();
+     this.state = {
+      namecontact: ''
+     }
+   }
+
+   getNameContactForNav = name => {
+     this.setState({namecontact: name})
+   }
 
     render(){
       return (
@@ -22,15 +32,15 @@ class HomeSms extends Component  {
         <section>
               <div className="w-100 mx-0 row ">
                  <NavBar/>
-                 <NavBarMesage/>
+                 <NavBarMesage namecontact = {this.state.namecontact}/>
               </div>
                <div className="w-100 mx-0 row ">
                  <div className ="col-4  px-0">
                        <SearchComponent/>
-                        <Listconversas/>
+                        <Listconversas getNameContactForNav={this.getNameContactForNav}  />
                   </div >
                   <div className="col px-0">
-                  <SendMessage/>
+                  <SendMessage />
                   </div>
                   
                </div>
