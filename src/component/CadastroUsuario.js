@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logopitang from '../assets/logopitang.PNG'
+import logopitang from '../assets/images/logopitang.PNG'
 import './login/LoginStyle.css'
 import cadastroUser from './Cadastro'
 import axios from 'axios';

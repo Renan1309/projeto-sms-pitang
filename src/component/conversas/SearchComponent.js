@@ -1,7 +1,7 @@
 import React , { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { se} from '@fortawesome/free-solid-svg-icons';
-import  './SearchStyle.css';
+import  '../../assets/style/SearchStyle.css';
 
 
 

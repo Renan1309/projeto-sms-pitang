@@ -1,8 +1,8 @@
 import React , { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faCommentAlt  , faEllipsisV , faCircleNotch} from '@fortawesome/free-solid-svg-icons';
-import  './NavBarStyle.css';
-import userdefault from '../../assets/userorange.png';
+import  '../../assets/style/NavBarStyle.css';
+import userdefault from '../../assets/images/userorange.png';
 import { Link } from 'react-router-dom';
 
 

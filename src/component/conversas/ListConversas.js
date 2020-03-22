@@ -1,9 +1,8 @@
 import React , { Component } from 'react';
-import '../conversas/ListaConversas.css';
+import '../../assets/style/ListaConversas.css';
 import axios from 'axios';
-import contactimage from '../../assets/contactprot.png';
+import contactimage from '../../assets/images/contactprot.png';
 
-import NavBarMesage from '../conversas/NavBarMensage';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';

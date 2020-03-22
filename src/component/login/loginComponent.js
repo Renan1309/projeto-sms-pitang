@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './LoginStyle.css'
-import logopitang from '../../assets/logopitang.PNG';
+import logopitang from '../../assets/images/logopitang.PNG';
 
 
 class LoginState {

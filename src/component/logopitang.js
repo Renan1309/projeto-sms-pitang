@@ -1,5 +1,5 @@
 import React from 'react';
-import logopitang from '../assets/logopitang.PNG'
+import logopitang from '../assets/images/logopitang.PNG'
 
 function Logopitang() {
   return (

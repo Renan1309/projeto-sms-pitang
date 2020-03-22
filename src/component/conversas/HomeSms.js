@@ -2,9 +2,9 @@ import React , { Component } from 'react';
 import Listconversas from './ListConversas';
 import NavBar from './NavBar';
 import NavBarMesage from './NavBarMensage';
-import './NavBarStyle.css'
-import  SearchComponent from './SearchComponent'
-import './Chat.css'
+import '../../assets/style/NavBarStyle.css';
+import  SearchComponent from './SearchComponent';
+import '../../assets/style/Chat.css';
 import SendMessage from './SendMessage';
 import axios from 'axios';
 
@@ -28,7 +28,7 @@ class HomeSms extends Component  {
 
    getContact = contact => {
     this.setState({contact: contact})
-    axios.get('http://localhost:8080/mensagens/user/1/contact/2/status/true',{}
+    axios.get(`http://localhost:8080/mensagens/user/1/contact/${contact.idUserContact}/status/true`,{}
     ).then(function (response) {
       console.log(response.data);
       this.setState({posts: response.data});
