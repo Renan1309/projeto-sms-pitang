@@ -7,6 +7,25 @@ import { faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 
 
+const MessageList = props => {
+    
+  const listmessages = props.posts.map((message)=>{
+      return(
+        <div className="boxmessage">
+          {message.contentmsg}
+        <div><small> {message.datareturn}</small></div>
+        </div>
+      );
+
+  });
+  return(
+    <>
+    {listmessages}
+    </>
+  )
+}
+
+
 class SendMessage  extends Component  {
   
   constructor() {
@@ -49,10 +68,9 @@ class SendMessage  extends Component  {
       return (
             <div className="bg-ligth w-100 h-100">
               <div className="objectmessage" >
-                  <div className="boxmessage">olá amigo</div>
-
-                  <div className="boxmessage">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</div>
-
+                 
+                <MessageList posts = {this.props.posts}/>
+                
               </div>
               <div className="col combomessage d-flex">
                  <input onChange= {this.sendMessage} value={this.state.message} type="text" className="inputmessage" />

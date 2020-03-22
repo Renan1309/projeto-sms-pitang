@@ -13,9 +13,10 @@
     margin: 3px;
     border-radius: 2px;
     border: 1px solid #eeeeee;
-    float: left;
-    clear: left;
+    float: right;
+    clear: right;
     display: block;
+    word-wrap: break-word;
 }
 
 
@@ -43,4 +44,7 @@
     height: 35px;
     margin-left: 5px;
     background-color: #d9d9d9;
+}
+.btn-style-send:hover{
+    background-color: #fff;
 }

@@ -17,7 +17,8 @@ class HomeSms extends Component  {
   constructor() {
     super();
      this.state = {
-      contact: ''
+      contact: '',
+      posts: [ ]
      }
    }
 
@@ -30,6 +31,7 @@ class HomeSms extends Component  {
     axios.get('http://localhost:8080/mensagens/user/1/contact/2/status/true',{}
     ).then(function (response) {
       console.log(response.data);
+      this.setState({posts: response.data});
     }.bind(this))
     .catch(function (error) {
       console.log(error);
@@ -53,7 +55,7 @@ class HomeSms extends Component  {
                         <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} />
                   </div >
                   <div className="col px-0">
-                  <SendMessage contact={this.state.contact} />
+                  <SendMessage contact={this.state.contact}  posts={this.state.posts}/>
                   </div>
                   
                </div>
