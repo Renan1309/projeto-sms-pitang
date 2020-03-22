@@ -20,7 +20,7 @@ const Conversations = props => {
     
       return(
      
-        <div  onClick={()=>props.setClick(talk.contact.name)} className="conversation">
+        <div  onClick={()=>props.setClick(talk.contact)} className="conversation">
         <div className="imgchat">
               <img className="imgchat" src={contactimage} alt="logouserdefault"></img>
         </div>
@@ -67,8 +67,8 @@ class Listconversas extends Component  {
     axios.get('http://localhost:8080/conversas/1',{}
     ).then(function (response) {
       this.setState({conversations:response.data});
-      console.log(response.data);
-      console.log(this.state.conversations);
+      //console.log(response.data);
+     // console.log(this.state.conversations);
     }.bind(this))
     .catch(function (error) {
       console.log(error);
@@ -76,8 +76,9 @@ class Listconversas extends Component  {
   }
 
   
-  setClick = name =>{
-    this.props.getNameContactForNav(name); 
+  setClick = contact =>{
+    this.props.getNameContactForNav(contact.name); 
+    this.props.getContact(contact)
   }
 
     render(){

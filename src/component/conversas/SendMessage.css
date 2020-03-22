@@ -2,7 +2,22 @@
     background-color: #fff;
     /* width: 100%; */
     height: 438px;
+    overflow-y: scroll;
 }
+
+.boxmessage{
+    max-width: 50%;
+    min-width: 150px;
+    background: #eeeeee;
+    padding: 2px;
+    margin: 3px;
+    border-radius: 2px;
+    border: 1px solid #eeeeee;
+    float: left;
+    clear: left;
+    display: block;
+}
+
 
 .combomessage{
     background-color: #e5e5e5;
