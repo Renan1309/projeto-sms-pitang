@@ -79,33 +79,34 @@ class LoginComponent extends Component {
         return (
             <>
 
-                <p>{this.state.login.email}</p>
-                <p>{this.state.password}</p>
-
-                <div className="container">
-                    <img src={logopitang} alt="LogoPitang"></img>
+                <div className="mainlogin">
+               
+                <img src={logopitang} alt="LogoPitang"></img>
+                         
+                    
 
                     <div className="combo">
+                       
                         <p><strong>SIGN IN</strong></p>
 
                         <form onSubmit={this.submitlistener} >
-                        <div className="form-row">
+                        <div className="">
                             <label >Login</label>
-                            <input onChange={this.setEmail} value={this.state.login.email} type="text" id="email" placeholder="login@pitang.com"  className= {"form-control"+(this.state.validalogin ? ' is-invalid' : '')}  ></input>
+                            <input onChange={this.setEmail} value={this.state.login.email} type="text" id="email" placeholder="login@pitang.com"  className= {" rounded-0 p-4 form-control"+(this.state.validalogin ? ' is-invalid' : '')}  ></input>
                                <div className="invalid-feedback">
                                    Please choose a login.
                                </div>
                         </div>
-                        <div className="form-row">
+                        <div className="">
                             <label >Senha</label>
-                            <input onChange={this.setPassword} value={this.state.login.password}  id="password"  type="password" className={"form-control"+(this.state.passwordlogin ? ' is-invalid' : '')} ></input>
+                            <input onChange={this.setPassword} value={this.state.login.password}  id="password"  type="password" className={"rounded-0 p-4 form-control"+(this.state.passwordlogin ? ' is-invalid' : '')} ></input>
                             <div className="invalid-feedback">
                                    Please choose a login.
                                </div>
                          </div>
 
                         <div>
-                               <div className="form-check">
+                               <div className="form-check mb-2 mt-2">
                                  <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
                                  <label className="form-check-label" hmlfor="exampleCheck1">Remember Me</label>
                               </div>

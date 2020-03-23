@@ -19,8 +19,8 @@ function AppRouter() {
       <Router history={history}>
           <Switch>
               <Route path={'/'}>
-                 <HomeSms/>
-              
+                {/*<HomeSms/> */} 
+                <Login/>
               </Route>
           </Switch>
       </Router>
