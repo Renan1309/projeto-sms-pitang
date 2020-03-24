@@ -1,0 +1,30 @@
+.menu-dropdown{
+    position: absolute;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 1px 4px -1px #000;
+    top: 2em;
+    min-width: 9em;
+  
+}
+
+.menu-option{
+    cursor: pointer;
+    display: flex;
+}
+
+.menu-option :hover{
+    background-color: #9e9e9e;
+}
+
+
+.tef{
+    position: relative;
+}
+.comboaddcontact{
+
+    
+
+}

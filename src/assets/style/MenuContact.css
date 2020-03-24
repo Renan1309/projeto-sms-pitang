@@ -1,0 +1,36 @@
+.area-chat{
+  color : white ;
+  display: grid;
+  background-color: gray;
+  padding: 10px;
+  grid-template-areas: "a2 a2 a2 a2 a2 a2"
+                       "a2 a2 a2 a2 a2 a2"
+                       "a2 a2 a2 a2 a2 a2"
+                       "a2 a2 a2 a2 a2 a2"
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+     background-color: blue;
+
+}
+
+.r3{
+    background-color: green;
+
+}
+
+
+
+.bdg{
+   background-color: seagreen;
+    width: 80px;
+    height: 80px;
+    backdrop-filter: blur(1000px);
+    position: relative;
+
+ 
+}

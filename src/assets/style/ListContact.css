@@ -1,0 +1,46 @@
+.listcontact{
+    max-height: 379px;
+    overflow-y: scroll;
+    cursor: pointer;
+    border-top: 1px solid #e4e4e4;
+
+}
+
+.contactcombo{
+    padding: 0.4em 0.2em;
+    background-color:#fff;
+    display: flex;
+    border-top: 1px solid #e4e4e4;
+    /*border-color: ffffff;*/
+}
+
+
+.addcontactcombo{
+    padding: 0.4em 0.2em;
+    background-color:#fff;
+    display: flex;
+    border-top: 1px solid #e4e4e4;
+    /*border-color: ffffff;*/
+}
+
+
+.namecontact{
+    display: block;
+    padding-top: 15px
+}
+
+
+
+.imgcontact {
+    width: 3.5em;
+    height: 3.5em;
+   background-color: tomato;
+
+}
+
+.imgaddcontact {
+    width: 3.5em;
+    height: 3.5em;
+   background-color:  royalblue;
+
+}

@@ -4,14 +4,8 @@ import './App.css';
 import { createBrowserHistory } from 'history';
 import HomeSms from './component/conversas/HomeSms'
 import Login from './component/login/HomePage'
+import ConversationObject from './component/conversas/ConversationObject';
 const history = createBrowserHistory();
-
-
-
-
-
-
-
 
 
 function AppRouter() {
@@ -19,8 +13,9 @@ function AppRouter() {
       <Router history={history}>
           <Switch>
               <Route path={'/'}>
-                {/*<HomeSms/> */} 
-                <Login/>
+              
+              <HomeSms/>
+               {/**<HomeSms/><Login/>  <ConversationObject/>*/} 
               </Route>
           </Switch>
       </Router>
