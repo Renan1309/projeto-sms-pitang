@@ -43,7 +43,7 @@ class NavBar extends Component  {
         <>
           {/*<div className= "col-3 teste">*/}
      
-          <nav className="col-4 navbar nav-bar-menu navbar-light">
+          <nav onClick={()=>this.props.renderListcontact()} className="col-4 navbar nav-bar-menu navbar-light">
           <img className="img" src={userdefault} alt="logouserdefault"></img>
             
                 <div className="tef"> 

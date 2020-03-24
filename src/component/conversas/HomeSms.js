@@ -17,7 +17,8 @@ class HomeSms extends Component  {
     super();
      this.state = {
       contact: '',
-      posts: [ ]
+      posts: [ ],
+      viewListcontact: false
      }
    }
 
@@ -38,6 +39,14 @@ class HomeSms extends Component  {
      
    }
 
+   renderListcontact =() =>{
+    if(this.state.viewListcontact == false){
+      this.setState({viewListcontact:true});
+    }else{
+      this.setState({viewListcontact:false});
+    }
+   }
+
     render(){
       return (
         <>
@@ -46,15 +55,15 @@ class HomeSms extends Component  {
   
         <section>
         <div className="w-100 mx-0 row ">
-                 <NavBar/>
+                 <NavBar renderListcontact = {this.renderListcontact}/>
                  <NavBarMesage namecontact = {this.state.contact.name}/>
               </div>
                <div className="w-100 mx-0 row ">
                  <div className ="col-4  px-0">
                        <SearchComponent/>
 
-                       <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} />
                        
+                       {this.state.viewListcontact ? <Listcontact/> : <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} /> }
                       {/*<Listcontact/>
                        <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} />
                       */ } 
