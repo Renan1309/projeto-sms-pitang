@@ -85,7 +85,7 @@ class Listconversas extends Component  {
      
         <>
             <div className= "listchat">
-           <Conversations  conversations = {this.state.conversations} setClick = {this.setClick}/>
+              <Conversations  conversations = {this.state.conversations} setClick = {this.setClick}/>
            </div>
         </>
        

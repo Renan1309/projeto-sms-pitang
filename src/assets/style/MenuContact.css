@@ -45,62 +45,36 @@
     font-size: 25px;
     font-weight: bold;
 }
-.area-chat{
-  color : white ;
-  display: grid;
-  background-color: gray;
-  padding: 10px;
-  grid-template-areas: "a2 a2 a2 a2 a2 a2"
-                       "a1 a1 a3 a3 a3 a3"
-                       "a4 a4 a4 a5 a5 a5"
-                       "a6 a6 a6 a6 a6 a6"
+
+
+.list-area-contact{
+    max-height: 200px;
+    overflow-y: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.search-contact-input{
+    width: 100%;
+    padding: 8px;
+    border: 0px;
+    box-shadow: -1px 4px 10px -5px rgba(0, 0, 0, 0.55);
+}
+.search-addcontact{
+    padding: 10px;
 }
 
-.r1{
-    background-color: red;
+.div-buttom{
+    padding: 6px;
+    float: right;
 }
 
-.r2{
-     background-color: blue;
-
+.btn-addcontact{
+    border: 0px;
+    box-shadow: -6px 3px 10px -5px rgba(0, 0, 0, 0.55);
+    background-color: #3f8a24;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    font-weight: bold;
 }
 
-.r3{
-    background-color: green;
-
-}
-
-.item1{
-   grid-area: a1;
-}
-
-.item2{
-    grid-area: a2;
-}
-
-.item3{
-    grid-area: a3;
-}
-
-.item4{
-    grid-area: a4;
-}
-
-.item5{
-    grid-area: a5;
-}
-
-.item6{
-    grid-area: a6;
-}
-
-
-.bdg{
-   background-color: seagreen;
-    width: 80px;
-    height: 80px;
-    backdrop-filter: blur(1000px);
-    position: relative;
-
- 
-}

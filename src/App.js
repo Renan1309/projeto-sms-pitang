@@ -4,7 +4,7 @@ import './App.css';
 import { createBrowserHistory } from 'history';
 import HomeSms from './component/conversas/HomeSms'
 import Login from './component/login/HomePage'
-import ConversationObject from './component/conversas/ConversationObject';
+
 const history = createBrowserHistory();
 
 

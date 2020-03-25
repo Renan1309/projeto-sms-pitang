@@ -8,7 +8,7 @@ import '../../assets/style/Chat.css';
 import SendMessage from './SendMessage';
 import axios from 'axios';
 import Listcontact from '../creatcontact/ListContact';
-import ConversationObject from './ConversationObject';
+import WindowsAddContact from '../creatcontact/WindowsAddContact';
 
 
 
@@ -82,7 +82,7 @@ class HomeSms extends Component  {
            </section>
 
         </div>
-        {this.state.pageAddContact ? <ConversationObject/> : <></> } 
+        {this.state.pageAddContact ? <WindowsAddContact renderAddContact={this.renderAddContact} /> : <></> } 
         </>
        
       );
