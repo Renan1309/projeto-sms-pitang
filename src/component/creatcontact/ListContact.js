@@ -9,7 +9,7 @@ class Listcontact extends Component  {
     render(){
         return(
             <>
-            <Addcontact/>
+            <Addcontact renderAddContact = {this.props.renderAddContact} />
            <div className= "listcontact bg-dark">
                     <div className="contactcombo">
                           <div className="imgchat">

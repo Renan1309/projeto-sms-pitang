@@ -8,6 +8,7 @@ import '../../assets/style/Chat.css';
 import SendMessage from './SendMessage';
 import axios from 'axios';
 import Listcontact from '../creatcontact/ListContact';
+import ConversationObject from './ConversationObject';
 
 
 
@@ -18,7 +19,8 @@ class HomeSms extends Component  {
      this.state = {
       contact: '',
       posts: [ ],
-      viewListcontact: false
+      viewListcontact: false,
+      pageAddContact:false
      }
    }
 
@@ -47,6 +49,14 @@ class HomeSms extends Component  {
     }
    }
 
+   renderAddContact =() =>{
+    if(this.state.pageAddContact == false){
+      this.setState({pageAddContact:true});
+    }else{
+      this.setState({pageAddContact:false});
+    }
+   }
+
     render(){
       return (
         <>
@@ -55,30 +65,24 @@ class HomeSms extends Component  {
   
         <section>
         <div className="w-100 mx-0 row ">
-                 <NavBar renderListcontact = {this.renderListcontact}/>
-                 <NavBarMesage namecontact = {this.state.contact.name}/>
+              <NavBar renderListcontact = {this.renderListcontact}/>
+              <NavBarMesage namecontact = {this.state.contact.name}/>
               </div>
                <div className="w-100 mx-0 row ">
-                 <div className ="col-4  px-0">
-                       <SearchComponent/>
-
-                       
-                       {this.state.viewListcontact ? <Listcontact/> : <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} /> }
-                      {/*<Listcontact/>
-                       <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact} />
-                      */ } 
-                       
-                  </div >
-                  <div className="col px-0">
-                  <SendMessage contact={this.state.contact}  posts={this.state.posts}/>
-                  </div>
-                  
+                   <div className ="col-4  px-0">
+                       <SearchComponent/> 
+                       {this.state.viewListcontact ? <Listcontact renderAddContact={this.renderAddContact}/> : 
+                       <Listconversas getNameContactForNav={this.getNameContactForNav} getContact={this.getContact}/>}
+                   </div >
+                   <div className="col px-0">
+                      <SendMessage contact={this.state.contact}  posts={this.state.posts}/>
+                   </div>
                </div> 
               
            </section>
 
         </div>
-      
+        {this.state.pageAddContact ? <ConversationObject/> : <></> } 
         </>
        
       );

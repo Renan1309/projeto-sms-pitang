@@ -12,7 +12,7 @@ class Addcontact extends Component  {
                     <div className="addcontactcombo">
                           <div className="imgaddcontact ">
                           </div>
-                          <div className ="col">
+                          <div  onClick={()=>this.props.renderAddContact()} className ="col">
                               <div d-block>
                                 <b className="namecontact">Adicionar novo contato</b>
                               </div>    
