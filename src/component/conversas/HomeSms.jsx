@@ -1,14 +1,15 @@
 import React , { Component } from 'react';
-import Listconversas from './ListConversas';
-import NavBar from './NavBar';
-import NavBarMesage from './NavBarMensage';
+import Listconversas from './ListConversas.jsx';
+import NavBar from './NavBar.jsx';
+import NavBarMesage from './NavBarMensage.jsx';
 import '../../assets/style/NavBarStyle.css';
-import  SearchComponent from './SearchComponent';
+import  SearchComponent from './SearchComponent.jsx';
 import '../../assets/style/Chat.css';
-import SendMessage from './SendMessage';
+import SendMessage from './SendMessage.jsx';
 import axios from 'axios';
-import Listcontact from '../creatcontact/ListContact';
-import WindowsAddContact from '../creatcontact/WindowsAddContact';
+import Listcontact from '../creatcontact/ListContact.jsx';
+import WindowsAddContact from '../creatcontact/WindowsAddContact.jsx';
+
 
 
 
@@ -83,6 +84,9 @@ class HomeSms extends Component  {
 
         </div>
         {this.state.pageAddContact ? <WindowsAddContact renderAddContact={this.renderAddContact} /> : <></> } 
+
+
+        
         </>
        
       );

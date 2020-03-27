@@ -53,6 +53,15 @@
     flex-direction: column;
 }
 
+
+.combo-tite {
+   
+    font-size: 22px;
+    line-height: 30px;
+   
+    color: #ffca0d;
+}
+
 /*
 .combo form label {
     font-size: 15px;
@@ -85,6 +94,8 @@
   color: #fff;
   cursor: pointer; /* da a impressao de pixel quando passa o mouse*/
 }
+
+
 
 .combo button.btnSU {
      

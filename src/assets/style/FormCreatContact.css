@@ -1,0 +1,38 @@
+.register-contact{
+
+    background-color: #fff;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.55);
+    width: 1350px;
+    height: 544px;
+
+}
+.register-body{
+    min-width: 20em;
+    box-shadow: 0 5px 9px -5px rgba(0, 0, 0, 0.48);
+
+}
+
+.icon-back-contact{
+    float: left;
+    font-size: 25px ;
+    color: #eeeeee;
+}
+.menu-register-contact{
+    display: flex;
+    background-color: #9e9e9e;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.title-card-add-contact{
+    margin-left: 20px;
+    font-size: 20px ;
+    color: #eeeeee;
+}
+
+.div-register-contact{
+    padding: 10px;
+    background-color: white;
+}

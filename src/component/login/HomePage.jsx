@@ -1,7 +1,9 @@
 import React , { Component } from 'react';
-import LoginComponent from './loginComponent';
+import LoginComponent from './loginComponent.jsx';
 import axios from 'axios';
-import { BrowserRouter , Router, Link,useHistory} from "react-router-dom";
+import { Switch , Route , Redirect} from "react-router-dom";
+
+
 
 
 
@@ -33,6 +35,7 @@ render(){
     return(
         
         <div className="App">
+          
            <LoginComponent envialogin = {this.envialogin}/>
         </div>
   

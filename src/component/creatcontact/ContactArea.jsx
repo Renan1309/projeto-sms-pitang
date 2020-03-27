@@ -100,4 +100,5 @@ class ContactArea extends Component  {
 </>
       )
   }
-}export default ContactArea;
+}
+export default ContactArea;

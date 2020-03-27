@@ -43,7 +43,7 @@ class LoginComponent extends Component {
    setPassword = event => {
     this.state.login.password = event.target.value;
     this.setState(new LoginState(this.state.login.password));
-}
+    }
  
     submitlistener = event => {
         event.preventDefault();
@@ -80,8 +80,8 @@ class LoginComponent extends Component {
             <>
 
                 <div className="mainlogin">
-               
-                <img src={logopitang} alt="LogoPitang"></img>
+                  <img src={logopitang} alt="LogoPitang"></img>
+               {/**<img src={logopitang} alt="LogoPitang"></img>  <div className="main-logo"></div>*/} 
                          
                     
 

@@ -1,7 +1,7 @@
 import React , { Component } from 'react';
 import '../../assets/style/ListContact.css';
-import Addcontact from './AddContact';
-import ContactArea from './ContactArea';
+import Addcontact from './AddContact.jsx';
+import ContactArea from './ContactArea.jsx';
 
 
 

@@ -2,8 +2,9 @@ import React ,{Component} from 'react';
 import { Switch, Route, Router } from 'react-router-dom';
 import './App.css';
 import { createBrowserHistory } from 'history';
-import HomeSms from './component/conversas/HomeSms'
-import Login from './component/login/HomePage'
+import HomeSms from './component/conversas/HomeSms.jsx'
+import LoginRouter from './component/Routes/Routes.jsx';
+import Routes from './component/Routes/Routes.jsx';
 
 const history = createBrowserHistory();
 
@@ -13,7 +14,7 @@ function AppRouter() {
       <Router history={history}>
           <Switch>
               <Route path={'/'}>
-              
+             
               <HomeSms/>
                {/**<HomeSms/><Login/>  <ConversationObject/>*/} 
               </Route>
@@ -28,7 +29,7 @@ class  App extends Component {
 
         <div className="app">
           <>
-            <AppRouter />
+           < Routes/>
             </>
         </div>
 

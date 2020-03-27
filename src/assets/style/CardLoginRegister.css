@@ -1,0 +1,46 @@
+.main-content{   
+    background-color: #fff;
+    min-width: 20em;
+    border-top: 0.5em solid red;
+    padding: 0.6em 0.6em;
+    box-shadow: 0 5px 9px -5px rgba(0, 0, 0, 0.48);
+}
+
+.main-logo{
+    background-image: url('../images/logo__pitang.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.2em;
+    height: 2.7em;
+}
+
+.btn-si {
+    border:  0; /* zerando a borda padrao que o btn vem */
+    margin-bottom: 10px;
+    border-radius: 2px;
+    width: 100%;
+    height: 42px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background:  #3b9c00;
+    color: #fff;
+    cursor: pointer; /* da a impressao de pixel quando passa o mouse*/
+  }
+
+  .btn-su {
+     
+    border-style: solid;
+    border-color: dimgray;
+    
+    width: 100%;
+    height: 42px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff;
+    
+    color: #070707;
+    cursor: pointer; /* da a impressao de pixel quando passa o mouse*/
+  }
