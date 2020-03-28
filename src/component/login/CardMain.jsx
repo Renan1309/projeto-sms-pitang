@@ -27,7 +27,9 @@ class CardMain extends Component{
          password: login.password
       } )
       .then(function (response) {
+        console.log(response);
         console.log(response.data);
+        sessionStorage.setItem('auth-token', response.data.token);
       })
       .catch(function (error) {
         console.log(error);

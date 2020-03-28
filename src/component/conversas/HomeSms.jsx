@@ -31,7 +31,12 @@ class HomeSms extends Component  {
 
    getContact = contact => {
        this.setState({contact: contact})
-       axios.get(`http://localhost:8080/mensagens/user/1/contact/${contact.idUserContact}/status/true`,{}
+       axios.post(`http://localhost:8080/mensagens/user/1/contact/${contact.idUserContact}/status/true`,{
+        headers:{
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
+        }
+       }
          ).then(function (response) {
           console.log(response.data);
           this.setState({posts: response.data});

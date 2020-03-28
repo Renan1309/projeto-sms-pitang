@@ -63,7 +63,13 @@ class Listconversas extends Component  {
 
 
   componentDidMount(){
-    axios.get('http://localhost:8080/conversas/1',{}
+    console.log(sessionStorage.getItem('auth-token'))
+    axios.get('http://localhost:8080/conversas/1',{
+      headers:{
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
+      }
+    }
     ).then(function (response) {
       this.setState({conversations:response.data});
       //console.log(response.data);

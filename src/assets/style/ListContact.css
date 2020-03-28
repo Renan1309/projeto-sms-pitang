@@ -29,9 +29,6 @@
     padding-top: 15px
 }
 
-
-
-
 .imgcontact {
     width: 3.5em;
     height: 3.5em;
@@ -44,4 +41,23 @@
     height: 3.5em;
    background-color:  royalblue;
 
+}
+
+.btn-contact-area{
+  
+		
+} 
+.btn-contact-area > button{
+    margin-right: 5px;
+    border: 0px;
+    background-color: transparent;
+}
+
+.btn-contact-area :hover {
+    background-color: #b7b7b7;
+}
+.div-btn-contact{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }

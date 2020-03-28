@@ -11,10 +11,7 @@
     margin-bottom: 30px ;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.55);
-
-   
-   
-}
+ }
 
 .navbarcenter{
   display: flex;
@@ -42,6 +39,7 @@
     color: #eee;
     margin-right: 15px;
     font-size: 24px;
+  
 }
 
 .navbar.nav-bar-menu {
@@ -52,6 +50,7 @@
     border-left-width: 0;
     border-top-width: 0;
     border-bottom-width: 0;
+    
 }
 
 .navbar.nav-bar-menu  img{
@@ -66,3 +65,10 @@
 }
 
 
+.story-icon{
+    background-image: url("../images/icon-story.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+
+}
