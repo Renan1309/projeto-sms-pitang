@@ -4,17 +4,31 @@ import '../../assets/style/SendMessage.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane} from '@fortawesome/free-solid-svg-icons';
+import WindowsDeleteMessage from './WindowsDeleteMessage';
 
 
 
 const MessageList = props => {
-    
+    console.log(props);
   const listmessages = props.posts.map((message)=>{
       return(
-        <div className="boxmessage">
-          {message.contentmsg}
-        <div><small> {message.datareturn}</small></div>
+      
+        <div className="box-message-main">
+            <div className="boxmessage">
+           {message.contentmsg}
+           
+            <div><small> 18:00</small></div>
+           {/*<div><small> {message.datareturn}</small></div>*/ }
         </div>
+        <button  onClick={( )=>props.renderWinDeleteMsg(message)} className="btn-delete-msg">
+             <i className="fas fa-chevron-down   icon-btn-ex-msg"></i>
+        </button>
+           
+        </div>
+         
+       
+   
+       
       );
 
   });
@@ -31,8 +45,9 @@ class SendMessage  extends Component  {
   constructor() {
     super();
     this.state = {
-        message  : '',
-        idcontact : ''
+        renderWinDeleteMsg  : false,
+        msgForDelete: '',
+        
     }
 }
 
@@ -46,6 +61,11 @@ class SendMessage  extends Component  {
       idusermsg : 1,
       idusercontact :this.state.idcontact
       
+       },{
+        headers:{
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
+        }
        } )
        .then(function (response) {
          console.log(response.data);
@@ -53,6 +73,15 @@ class SendMessage  extends Component  {
        .catch(function (error) {
          console.log(error);
        });
+  }
+
+  
+  renderWinDeleteMsg = message =>{
+      this.setState({msgForDelete: message});
+      this.setState({renderWinDeleteMsg:true});
+  }
+  closeWindDeleteMsg = ()=>{
+    this.setState({renderWinDeleteMsg:false});
   }
 
   sendMessage = event => {
@@ -66,11 +95,12 @@ class SendMessage  extends Component  {
     render(){
       console.log(this.props);
       return (
+      <>
             <div className="bg-ligth w-100 h-100">
               <div className="objectmessage" >
                  
-                <MessageList posts = {this.props.posts}/>
-                
+                <MessageList posts = {this.props.posts} renderWinDeleteMsg={this.renderWinDeleteMsg} />
+               
               </div>
               <div className="col combomessage d-flex">
                  <input onChange= {this.sendMessage} value={this.state.message} type="text" className="inputmessage" />
@@ -78,6 +108,8 @@ class SendMessage  extends Component  {
               </div>
                
            </div>
+           {this.state.renderWinDeleteMsg ? <WindowsDeleteMessage message={this.state.msgForDelete} closeWindDeleteMsg={this.closeWindDeleteMsg} /> : <></> } 
+          </>
       );
 
     }

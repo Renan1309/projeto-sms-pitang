@@ -6,10 +6,11 @@
     background-size: 350px;
     background-repeat: no-repeat;
     background-position: center;
+   
 }
 
 .boxmessage{
-    max-width: 50%;
+    /*max-width: 50%;*/
     min-width: 150px;
     background: #eeeeee;
     padding: 2px;
@@ -18,8 +19,19 @@
     border: 1px solid #eeeeee;
     float: right;
     clear: right;
-    display: block;
     word-wrap: break-word;
+
+
+}
+.box-message-main{
+    margin: 3px;
+    display: flex;
+    max-width: 50%;
+    min-width: 150px;
+    background: #eeeeee;
+    float: right;
+    clear: right;
+  
 }
 
 
@@ -47,4 +59,15 @@
 }
 .btn-style-send:hover{
     background-color: #fff;
+}
+
+.btn-delete-msg{
+    
+    border: 0px;
+    height: 50px;
+    
+    background-color: transparent;
+}
+.icon-btn-ex-msg{
+    align-content: flex-start;
 }

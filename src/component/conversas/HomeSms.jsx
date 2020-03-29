@@ -9,6 +9,7 @@ import SendMessage from './SendMessage.jsx';
 import axios from 'axios';
 import Listcontact from '../creatcontact/ListContact.jsx';
 import WindowsAddContact from '../creatcontact/WindowsAddContact.jsx';
+import WindowsDeleteMessage from './WindowsDeleteMessage.jsx';
 
 
 
@@ -31,7 +32,7 @@ class HomeSms extends Component  {
 
    getContact = contact => {
        this.setState({contact: contact})
-       axios.post(`http://localhost:8080/mensagens/user/1/contact/${contact.idUserContact}/status/true`,{
+       axios.get(`http://localhost:8080/mensagens/user/1/contact/${contact.idUserContact}/status/true`,{
         headers:{
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
@@ -64,6 +65,7 @@ class HomeSms extends Component  {
    }
 
     render(){
+      
       return (
         <>
        
@@ -90,7 +92,7 @@ class HomeSms extends Component  {
         </div>
         {this.state.pageAddContact ? <WindowsAddContact renderAddContact={this.renderAddContact} /> : <></> } 
 
-
+       
         
         </>
        

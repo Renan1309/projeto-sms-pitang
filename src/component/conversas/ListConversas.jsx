@@ -25,6 +25,7 @@ const Conversations = props => {
         </div>
         <div className ="col">
             <div d-block>
+              {console.log(new Date(talk.datareturn).getTime())}
                <b className="b namecontact">{talk.contact.name}</b>
                <small>{talk.contentMenssage.contentmsg}</small> 
             </div>    
