@@ -35,13 +35,15 @@ class WindowsDeleteMessage  extends Component  {
        } )
        .then(function (response) {
          console.log(response.data);
-       })
+         this.props.closeWindDeleteMsg()
+       }.bind(this))
        .catch(function (error) {
          console.log(error);
        });
   }
   
   deleteMessageGeneral = message => {
+    
     console.log(message);
        axios.put('http://localhost:8080/message/delete/2', {
       id: message.id,
@@ -59,20 +61,25 @@ class WindowsDeleteMessage  extends Component  {
       }
      } )
      .then(function (response) {
+      
+      this.closewin()
        console.log(response.data);
-     })
+      
+     }.bind(this))
      .catch(function (error) {
        console.log(error);
      });
 }
 
-   
+   closewin(){
+    this.props.closeWindDeleteMsg();
+   }
   
       render(){
-          let btnteste = <></>
+          let deletemsggeral = <></>
         console.log( this.props);
         if(this.props.message.idusermsg == 1){
-            btnteste = <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="">Delete teste</button>
+          deletemsggeral = <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="btns-win-deletemsg">APAGAR PARA TODOS</button>
         }else{
             
         }
@@ -82,10 +89,13 @@ class WindowsDeleteMessage  extends Component  {
                 
                <div className="win-delete-msg">
                    
-                   
-                {btnteste}
-                 <button onClick={()=>this.props.closeWindDeleteMsg()} className="">close</button>
-                 <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="">Delete MSG</button>
+                 <p>Apagar Mensagem ?</p> 
+                 <div className="box-btns-delete">
+                   {deletemsggeral} 
+                   <button onClick={()=>this.props.closeWindDeleteMsg()} className="btns-win-deletemsg">CANCELAR</button>
+                   <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="btns-win-deletemsg">APAGAR PARA MIM</button>
+                 </div>
+                 
                </div>
           
                

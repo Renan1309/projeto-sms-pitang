@@ -1,10 +1,10 @@
 import React , {Component} from 'react'
 import {BrowserRouter, Switch, Route, Router , Redirect } from 'react-router-dom';
-import HomePage from '../login/HomePage.jsx';
+
 import CadastroUsuario from '../CadastroUsuario.jsx';
 import HomeSms from '../conversas/HomeSms.jsx';
 import FormCreatContact from '../creatcontact/FormCreatContact.jsx';
-import CardMain from '../login/CardMain.jsx';
+
 
 import { createBrowserHistory } from 'history';
 import HomeLogin from '../login/HomeLogin.jsx';
