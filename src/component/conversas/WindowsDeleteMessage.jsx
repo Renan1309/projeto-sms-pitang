@@ -41,6 +41,30 @@ class WindowsDeleteMessage  extends Component  {
        });
   }
   
+  deleteMessageGeneral = message => {
+    console.log(message);
+       axios.put('http://localhost:8080/message/delete/2', {
+      id: message.id,
+      contentmsg:message.contentmsg,
+      idusermsg: message.idusermsg,
+      idusercontact: message.idusercontact,
+      statusSend: message.statusSend,
+      statusRecipient: message.statusRecipient,
+      
+
+     },{
+      headers:{
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
+      }
+     } )
+     .then(function (response) {
+       console.log(response.data);
+     })
+     .catch(function (error) {
+       console.log(error);
+     });
+}
 
    
   
@@ -49,6 +73,8 @@ class WindowsDeleteMessage  extends Component  {
         console.log( this.props);
         if(this.props.message.idusermsg == 1){
             btnteste = <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="">Delete teste</button>
+        }else{
+            
         }
         return (
             <>

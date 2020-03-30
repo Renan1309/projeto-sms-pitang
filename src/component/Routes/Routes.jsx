@@ -6,18 +6,28 @@ import HomeSms from '../conversas/HomeSms.jsx';
 import FormCreatContact from '../creatcontact/FormCreatContact.jsx';
 import CardMain from '../login/CardMain.jsx';
 
+import { createBrowserHistory } from 'history';
+import HomeLogin from '../login/HomeLogin.jsx';
+import HomeRegister from '../login/HomeRegister.jsx';
+const history = createBrowserHistory();
+
+
 
 const Routes = () =>(
-    <BrowserRouter>
-        <Switch>
-            <Route path="/sign-in" exact component={HomePage}/>
-            <Route path="/sign-up" exact component={CadastroUsuario}/>
-            <Route path="/main" exact component={HomeSms}/>
-            <Route path="/creat-contact" exact component={FormCreatContact}/>
-            <Route path="/loginteste" exact component={CardMain}/>
-        </Switch>
     
-    </BrowserRouter>
+
+    <BrowserRouter>
+    <Switch>
+        <Route path="/" exact component={HomeLogin}/>
+        <Route path="/sign-in" exact component={HomeLogin}/>
+        <Route path="/sign-up" exact component={HomeRegister}/>
+        <Route path="/main" exact component={HomeSms}/>
+        
+    </Switch>
+
+</BrowserRouter>
+    
+    
 );
 
 

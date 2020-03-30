@@ -1,17 +1,12 @@
 import React , { Component } from 'react';
-
 import axios from 'axios';
-import { Switch , Route , Redirect , BrowserRouter , Router} from "react-router-dom";
-
 import '../../assets/style/CardLoginRegister.css';
 import Login from './Login.jsx';
-import Register from './Register.jsx';
 
 
 
 
-
-class CardMain extends Component{
+class HomeLogin extends Component{
  
      constructor() {
         super();
@@ -52,8 +47,8 @@ render(){
                 <section>
                   <div className="main-logo"></div>
                    <div className="main-content">
-                     {/*<Login envialogin={this.envialogin}/>  <Register/>  {this.state.registerUser ? <Register/> : <Login envialogin={this.envialogin}/> }*/ } 
-                     <HomeRouter/>
+                     {/*  <Register/>  {this.state.registerUser ? <Register/> : <Login envialogin={this.envialogin}/> }*/ } 
+                     <Login envialogin={this.envialogin}/>
                       
                    </div>
                 </section>   
@@ -65,4 +60,4 @@ render(){
 }
 
 }
-export default CardMain;
+export default HomeLogin;
