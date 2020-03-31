@@ -61,13 +61,13 @@
     background-color: #fff;
 }
 
+
+
 .btn-delete-msg{
-    
-    border: 0px;
-    height: 50px;
-    
-    background-color: transparent;
+   
+   
+   
+    padding: 2px;
+   /* background-color: transparent;*/
 }
-.icon-btn-ex-msg{
-    align-content: flex-start;
-}
+

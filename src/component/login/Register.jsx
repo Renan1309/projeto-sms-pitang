@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './LoginStyle.css'
 import cadastroUser from '../Cadastro'
 import axios from 'axios';
-import { render } from '@testing-library/react';
+import {Link} from 'react-router-dom';
 
 
 class Register extends Component {
@@ -51,18 +51,25 @@ handlerSubmitUser = event =>{
     return (
     
       <>
-  
-                
-                
+                <div className="div-title-signup">
+
+                <Link to='/sign-in' >
+                     <i class="fas fa-arrow-left  back-signin"></i>
+                     
+                 </Link>
+                 <div className="title-signup">SING UP</div>
+               
+                </div>
+                    
                     <form onSubmit={this.handlerSubmitUser}>
-                    <p className="combo-tite"><strong>SIGN UP</strong></p>
+                    
                       <div className="form-group">
                         <label>Name</label>
                         <input onChange={this.fillField('name')} value={this.state.cadastro.name} type="text" className=" rounded-0 form-control" ></input>
                       </div>
                       <div className="form-group">
                         <label >Username</label>
-                        <input onChange={this.fillField('surname')} type="text" className="form-control" ></input>
+                        <input onChange={this.fillField('surname')} value={this.state.cadastro.surname} type="text" className="form-control" ></input>
                       </div>
                       <div className="form-group">
                         <label >Email</label>
@@ -70,7 +77,11 @@ handlerSubmitUser = event =>{
                       </div>
                       <div className="form-group">
                         <label>Password</label>
-                        <input onChange={this.fillField('password')} type="password" className=" rounded-0  form-control" ></input>
+                        <input onChange={this.fillField('password')} 
+                        value={this.state.cadastro.password} 
+                        type="password" 
+                        className=" rounded-0  form-control "
+                        required minLength="4" ></input>
                       </div>
                       <div className="form-group">
                         <label>Confirm Password</label>

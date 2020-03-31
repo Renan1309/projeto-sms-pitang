@@ -12,11 +12,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 
 const Conversations = props => {
-
+  
   
 
   const listconversations = props.conversations.map((talk)=>{
-    
+     
       return(
      
         <div  onClick={()=>props.setClick(talk.contact)} className="conversation">
@@ -32,8 +32,9 @@ const Conversations = props => {
         </div>
         <div className="d-flex justify-content-center">
            <section>
-               <small>{talk.contentMenssage.datareturn}</small>
-               <div className="iconprops"> 
+             {/* <small>{talk.contentMenssage.datareturn}</small>*/}
+               <small>16:50</small>
+               <div onClick={(e)=>props.clicktest(e)} className="iconprops"> 
                   <FontAwesomeIcon icon={faChevronDown} className="iconeditmsg"/>
                </div>
            </section>
@@ -65,7 +66,7 @@ class Listconversas extends Component  {
 
   componentDidMount(){
     console.log(sessionStorage.getItem('auth-token'))
-    axios.get('http://localhost:8080/conversas/1',{
+    axios.get(`http://localhost:8080/conversas/${sessionStorage.getItem('iduser')}`,{
       headers:{
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${sessionStorage.getItem('auth-token')}`
@@ -81,7 +82,11 @@ class Listconversas extends Component  {
     })
   }
 
-  
+  clicktest = event =>{
+    event.stopPropagation();
+    alert("ola");
+  }
+
   setClick = contact =>{
     this.props.getNameContactForNav(contact.name); 
     this.props.getContact(contact)
@@ -92,7 +97,7 @@ class Listconversas extends Component  {
      
         <>
             <div className= "listchat">
-              <Conversations  conversations = {this.state.conversations} setClick = {this.setClick}/>
+              <Conversations  conversations = {this.state.conversations} setClick = {this.setClick}   clicktest={this.clicktest}/>
            </div>
         </>
        

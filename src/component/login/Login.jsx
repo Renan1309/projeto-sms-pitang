@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import './LoginStyle.css';
+import {Link} from 'react-router-dom';
 
-import './LoginStyle.css'
-import logopitang from '../../assets/images/logopitang.PNG';
 
 
 class LoginState {
@@ -82,7 +82,7 @@ class Login extends Component {
                    <form onSubmit={this.submitlistener} >
                         <div className="form-group">
                             <label >Login</label>
-                            <input onChange={this.setEmail} value={this.state.login.email} type="text" id="email" placeholder="login@pitang.com"  className= {" rounded-0 p-2 form-control"+(this.state.validalogin ? ' is-invalid' : '')}  ></input>
+                            <input onChange={this.setEmail} value={this.state.login.email} type="text" id="email" placeholder=""  className= {" rounded-0 p-2 form-control"+(this.state.validalogin ? ' is-invalid' : '')}  ></input>
                                <div className="invalid-feedback">
                                    Please choose a login.
                                </div>
@@ -102,7 +102,9 @@ class Login extends Component {
                             </div>
                         </div>
                         <button className="btn-si" type="submit">SIGN IN</button>
-                        <button className="btn-su" type="submit" >SIGN UP</button>
+                        <Link to='/sign-up' >
+                        <button className="btn-su" type="" >SIGN UP</button>
+                        </Link>
                    </form>
 
             </>

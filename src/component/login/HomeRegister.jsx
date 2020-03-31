@@ -23,6 +23,7 @@ render(){
         <>
             <div className ="cardMain">
                 <section>
+                   
                   <div className="main-logo"></div>
                    <div className="main-content">
                      {/*    {this.state.registerUser ? <Register/> : <Login envialogin={this.envialogin}/> }*/ } 

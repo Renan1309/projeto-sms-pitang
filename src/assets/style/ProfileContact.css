@@ -1,0 +1,9 @@
+.nav-prof-form{
+    background-color: #9e9e9e;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 40px;
+}

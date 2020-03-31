@@ -7,17 +7,7 @@
     align-items: center;
     
 }
-/*
-.container {
-    margin: 80px auto 0;
-    max-width: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: #070707;
-}
-*/
+
 .divisao{
     margin: 10px auto 0;
     background-color : darkred;
@@ -62,29 +52,10 @@
     color: #ffca0d;
 }
 
-/*
-.combo form label {
-    font-size: 15px;
-    color: rgb(185, 185, 185);
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-*/
-/*
-.combo form input[type=email], .combo form input[type=password]{
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    height: 45px;
-    padding: 0 15px;
-    font-size: 16px;
-}
-*/
-
 .combo button.btnSI {
   border:  0; /* zerando a borda padrao que o btn vem */
   margin-bottom: 10px;
-  border-radius: 2px;
+  
   width: 100%;
   height: 42px;
   padding: 0 20px;
@@ -116,4 +87,19 @@
  /*Aprendendo a criar efeito de passar o mouse*/
  .combo button.btn:hover{
     background:  #296901;
+ }
+
+ .back-signin{
+     
+     color: #cbcbcb ;
+ }
+
+ .div-title-signup{
+        display: flex;
+        font-size: 1.3em;
+ }
+ .title-signup{
+        color: #FFC801 ;
+        font-weight: bold;
+        margin-left: 10px;
  }

@@ -18,7 +18,7 @@ class WindowsDeleteMessage  extends Component  {
   }
   deleteMessageIndividual = message => {
       console.log(message);
-    axios.put('http://localhost:8080/message/user/1', {
+    axios.put(`http://localhost:8080/message/user/${sessionStorage.getItem('iduser')}`, {
         id: message.id,
         contentmsg:message.contentmsg,
         idusermsg: message.idusermsg,
@@ -45,7 +45,7 @@ class WindowsDeleteMessage  extends Component  {
   deleteMessageGeneral = message => {
     
     console.log(message);
-       axios.put('http://localhost:8080/message/delete/2', {
+       axios.put(`http://localhost:8080/message/delete/${sessionStorage.getItem('iduser')}`, {
       id: message.id,
       contentmsg:message.contentmsg,
       idusermsg: message.idusermsg,
@@ -78,7 +78,7 @@ class WindowsDeleteMessage  extends Component  {
       render(){
           let deletemsggeral = <></>
         console.log( this.props);
-        if(this.props.message.idusermsg == 1){
+        if(this.props.message.idusermsg == sessionStorage.getItem('iduser')){
           deletemsggeral = <button onClick={()=>this.deleteMessageIndividual(this.props.message)} className="btns-win-deletemsg">APAGAR PARA TODOS</button>
         }else{
             
@@ -89,7 +89,7 @@ class WindowsDeleteMessage  extends Component  {
                 
                <div className="win-delete-msg">
                    
-                 <p>Apagar Mensagem ?</p> 
+                <div className="title-win-delete">Apagar Mensagem ?</div> 
                  <div className="box-btns-delete">
                    {deletemsggeral} 
                    <button onClick={()=>this.props.closeWindDeleteMsg()} className="btns-win-deletemsg">CANCELAR</button>

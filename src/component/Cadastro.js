@@ -1,7 +1,7 @@
 class Cadastro {
 
     constructor(data) {
-       this.name = '';
+        this.name = '';
         this.surname = '';
         this.email = '';
         this.password = '';

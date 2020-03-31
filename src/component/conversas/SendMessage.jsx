@@ -15,14 +15,23 @@ const MessageList = props => {
       
         <div className="box-message-main">
             <div className="boxmessage">
-           {message.contentmsg}
+               {message.contentmsg}
            
             <div><small> 18:00</small></div>
-           {/*<div><small> {message.datareturn}</small></div>*/ }
-        </div>
-        <button  onClick={( )=>props.renderWinDeleteMsg(message)} className="btn-delete-msg">
-             <i className="fas fa-chevron-down   icon-btn-ex-msg"></i>
-        </button>
+              {/*<div><small> {message.datareturn}</small></div>*/ }
+           </div>
+       
+       
+          <div className="d-flex justify-content-center">
+            <div  onClick={( )=>props.renderWinDeleteMsg(message)} className="btn-delete-msg">
+             <i className="fas fa-chevron-down  "></i>
+            </div>
+        
+          </div>
+      
+       
+        
+        
            
         </div>
          
@@ -58,7 +67,7 @@ class SendMessage  extends Component  {
     console.log("id contato =>"+this.state.idcontact);
     axios.post('http://localhost:8080/mensage/new', {
       contentmsg: this.state.message,
-      idusermsg : 1,
+      idusermsg : sessionStorage.getItem('iduser'),
       idusercontact :this.state.idcontact
       
        },{

@@ -9,6 +9,7 @@ import FormCreatContact from '../creatcontact/FormCreatContact.jsx';
 import { createBrowserHistory } from 'history';
 import HomeLogin from '../login/HomeLogin.jsx';
 import HomeRegister from '../login/HomeRegister.jsx';
+import HomeProfileContact from '../profileContact/HomeProfileContact.jsx';
 const history = createBrowserHistory();
 
 
@@ -22,6 +23,7 @@ const Routes = () =>(
         <Route path="/sign-in" exact component={HomeLogin}/>
         <Route path="/sign-up" exact component={HomeRegister}/>
         <Route path="/main" exact component={HomeSms}/>
+        <Route path="/profile" exact component={HomeProfileContact}/>
         
     </Switch>
 
